@@ -30,20 +30,6 @@ export default {
                     }
             ]
         },
-        {
-            id: 'chart-maps',
-            title: 'Chart',
-            type: 'group',
-            icon: 'icon-charts',
-            children: [
-                {
-                    id: 'charts',
-                    title: 'Charts',
-                    type: 'item',
-                    icon: 'feather icon-pie-chart',
-                    url: '/charts/nvd3'
-                }
-            ]
-        },
+       
     ]
 }
