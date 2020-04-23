@@ -1,6 +1,6 @@
 import React from 'react';
 import {Row, Col, Card, Table, Tabs, Tab} from 'react-bootstrap';
-import NVD3Chart from 'react-nvd3';
+import NVD3Chart from './Charts/Nvd3Chart/index';
 
 
 import Aux from "../../hoc/_Aux";
@@ -233,9 +233,10 @@ class Dashboard extends React.Component {
                             </Card.Body>
                         </Card>
                     </Col>
-                  
-                  
-                </Row>
+                    </Row>
+                    <NVD3Chart id="chart" height={300} type="pieChart" datum={datum} x="key" y="y" donut labelType='percent' />
+                
+
             </Aux>
         );
     }
@@ -250,12 +251,7 @@ const datum = [
     {key: "Seven", y: 13, color: "#a389d4"},
     {key: "Eight", y: 5, color: "#FE8A7D"}
 ];
-class PieDonutChart extends React.Component {
 
-    render() {
-        return <NVD3Chart id="chart" height={300} type="pieChart" datum={datum} x="key" y="y" donut labelType='percent' />
-    }
-}
 
 export default Dashboard;
-export {PieDonutChart};
+//export {PieDonutChart};
