@@ -1,7 +1,7 @@
 import React from 'react';
 import {Row, Col, Card} from 'react-bootstrap';
 
-import Aux from "../../../hoc/_Aux/index";
+//import Aux from "../../../../hoc/_Aux/index";
 import LineChart from "./LineChart";
 import BarDiscreteChart from "./BarDiscreteChart";
 import MultiBarChart from "./MultiBarChart";
@@ -12,7 +12,7 @@ class Nvd3Chart extends React.Component {
 
     render() {
         return (
-            <Aux>
+          //  <Aux>
                 <Row>
                     <Col md={6}>
                         <Card>
@@ -65,7 +65,7 @@ class Nvd3Chart extends React.Component {
                         </Card>
                     </Col>
                 </Row>
-            </Aux>
+            //</Aux>
         );
     }
 }
